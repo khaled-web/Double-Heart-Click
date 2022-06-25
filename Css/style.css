@@ -1,0 +1,69 @@
+/* font style */
+ @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* General style */
+:root{
+ --clr-white01:#F6FBF4;
+ --clr-white02: #fff;
+ --clr-grey01: #ecf0f1;
+ --clr-grey02: #777;
+ --clr-grey03: #aaa;
+ --clr-red01:#F47C7C;
+ --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body{
+ background-color: var(--clr-grey);
+ font-family: 'Oswald', 'sans-serif';
+ text-align: center;
+ overflow: hidden;
+ margin: 0;
+}
+
+h3{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+small{
+  display: block;
+
+}
+
+img{
+ max-width: 100%;
+ margin-bottom: 200px;
+ text-align: center;
+}
+/* Animation */
+@keyframes grow {
+  to{
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
+/* special style */
+
+.fa-heart{
+  color: red;
+}
+
+.loveMe{
+  height: 700px;
+  width: 500px;
+  background: url(../Img/BackgroundImage.jpg) center/cover no-repeat fixed;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: var(--dark-shadow);
+}
+
+.loveMe .fa-heart{
+  position: absolute;
+  animation: grow .6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+
